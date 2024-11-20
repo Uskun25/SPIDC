@@ -93,6 +93,7 @@ ul li a:hover {
 
 .home-text {
     max-width: 500px;
+    margin-right: 20px; 
 }
 
 .home-text h1 {
@@ -101,7 +102,7 @@ ul li a:hover {
     font-weight: 700;
     margin-bottom: 2.5rem;
     line-height: 5.5rem;
-}
+} 
 
 .home-text span {
     color: var(--main-color);
@@ -127,16 +128,17 @@ ul li a:hover {
 .home-img {
     width: 825px;
     height: 410px;
+    margin-left: auto; 
 }
 
 .home-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 100%;  /* Fit image to the container's width */
+    height: 100%; /* Fit image to the container's height */
+    object-fit: cover; /* Ensures proper scaling without distortion */
+    /* object-fit: contain; */
     object-position: center;
     border-radius: 55px;
 }
-
 /* #endregion*/
 
 /* #region social-design*/
@@ -201,7 +203,7 @@ ul li a:hover {
 .about-img img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     border-radius: 55px;
 }
@@ -209,6 +211,7 @@ ul li a:hover {
 .about-text {
     width: 500px;
     justify-content: center;
+    margin-left: 20px;
 }
 
 .about-text h1 {
@@ -288,18 +291,19 @@ ul li a:hover {
     display: flex;
     justify-content: space-around;
     height: 80vh;
-    margin-top: 5rem;
+    align-items: center;  
 }
 
 .work-text {
     max-width: 500px;
+    margin-right: 20px; 
 }
 
 .work-text h1 {
     font-size: 1.5rem;
     color: var(--second-color);
     line-height: 2.4rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px; 
 }
 
 .work-text p {
@@ -333,7 +337,7 @@ ul li a:hover {
 .work-img img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover; 
     object-position: center;
     border-radius: 55px;
 }
@@ -506,6 +510,13 @@ ul li a:hover {
         height: 240px;
         margin-left: 1rem;
     }
+
+    .home-img img {
+        width: 100%;  /* Fit image to the container's width */
+        height: 100%; /* Fit image to the container's height */
+        object-fit: cover; /* Ensures proper scaling without distortion */
+    }
+    
 
     .social {
         left: 110px;
