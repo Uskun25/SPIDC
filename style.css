@@ -20,37 +20,57 @@
     --second-color: #393d21;
     --third-color: #f4f755;
     --fourth-color: rgb(197, 53, 9);
+
+    /* Box Shadow */
+    --box-shadow: 10px 10px 18px rgba(41, 63, 23, 0.15);
 }
 
 section {
     padding: 100px;
 }
 
+body {
+    /* color: var(--text-color); */
+    /* background-image: url(images/background/brown/brown-paper-1.png); */
+    background-image: url(images/background/custom/Background.png);
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed;  */
+    /* background-size: 100% 100%;  */
+}
+
 /* #endregion */
 
 /* #region navbar-design */
 nav {
+    /* background-image: url(images/background/blue/blue-paper-8.png); */
+    background-image: url(images/background/custom/Navbar.png);
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 15px 100px;
     /* background: #fff; */
-    background: #3751e9;
+    /* background: #3751e9; */
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     z-index: 1000;
     transition: 0.5s;
+
+    box-shadow: var(--box-shadow)
 }
 
-/* .logo {
-    text-transform: uppercase;
+.logo {
+    /* text-transform: uppercase;
     font-size: 1.4rem;
     color: var(--second-color);
-    font-weight: 700;
-} */
+    font-weight: 700; */
+    margin-right: auto; 
+}
 
 .logo img.logo-img {
     width: 180px;
@@ -93,7 +113,7 @@ ul li a:hover {
 
 .home-text {
     max-width: 500px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .home-text h1 {
@@ -102,7 +122,7 @@ ul li a:hover {
     font-weight: 700;
     margin-bottom: 2.5rem;
     line-height: 5.5rem;
-} 
+}
 
 .home-text span {
     color: var(--main-color);
@@ -128,7 +148,9 @@ ul li a:hover {
 .home-img {
     width: 825px;
     height: 410px;
-    margin-left: auto; 
+    margin-left: auto;
+    box-shadow: var(--box-shadow);
+    border-radius: 55px;
 }
 
 .home-img img {
@@ -206,6 +228,7 @@ ul li a:hover {
     object-fit: cover;
     object-position: center;
     border-radius: 55px;
+    box-shadow: var(--box-shadow);
 }
 
 .about-text {
@@ -258,8 +281,8 @@ ul li a:hover {
     max-width: 320px;
     margin: 16px;
     text-align: center;
-
     border-radius: 1.5rem;
+    box-shadow: var(--box-shadow);  
 }
 
 .box img {
@@ -278,9 +301,9 @@ ul li a:hover {
 
 .services-content .box:hover {
     transform: translateY(-10px);
-    background: var(--main-color);
+    /* background: var(--main-color); */
+    background-image: url(images/background/custom/Card.png);
     transition: 0.5s;
-
     cursor: pointer;
 }
 
@@ -291,19 +314,19 @@ ul li a:hover {
     display: flex;
     justify-content: space-around;
     height: 80vh;
-    align-items: center;  
+    align-items: center;
 }
 
 .work-text {
     max-width: 500px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .work-text h1 {
     font-size: 1.5rem;
     color: var(--second-color);
     line-height: 2.4rem;
-    letter-spacing: 0.5px; 
+    letter-spacing: 0.5px;
 }
 
 .work-text p {
@@ -330,16 +353,17 @@ ul li a:hover {
 }
 
 .work-img {
-    width: 580px; 
+    width: 580px;
     height: 305px;
 }
 
 .work-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     object-position: center;
     border-radius: 55px;
+    box-shadow: var(--box-shadow);
 }
 
 /* #endregion */
@@ -516,7 +540,7 @@ ul li a:hover {
         height: 100%; /* Fit image to the container's height */
         object-fit: cover; /* Ensures proper scaling without distortion */
     }
-    
+
 
     .social {
         left: 110px;
@@ -586,7 +610,7 @@ ul li a:hover {
 
     .home-img {
         width: 350px;
-        height: 185px;  
+        height: 185px;
         margin-left: 0rem;
         object-position: center;
     }
